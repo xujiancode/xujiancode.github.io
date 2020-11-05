@@ -11,9 +11,9 @@ login = ''
 def index(id=None):
     global name, login
     if request.method == 'POST':
-        if request.form.get('account') == 'admin' and request.form.get('pwd') == 'admin':
+        if request.form.get('account') == 'xujian' and request.form.get('pwd') == 'xujian':
             login = 'success'
-            name = 'admin'
+            name = 'xujian'
             return render_template('1.html', name=name, login=login)
         else:
             login = 'fail'
